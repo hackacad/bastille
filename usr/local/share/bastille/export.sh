@@ -111,18 +111,18 @@ while [ $# -gt 0 ]; do
             zfs_enable_check
             shift
             ;;
-        -s|safe|--safe)
+        -s|--safe)
             SAFE_EXPORT="1"
             TARGET="${2}"
             shift
             ;;
-        -r|raw|--raw)
+        -r|--raw)
             RAW_EXPORT="1"
             TARGET="${2}"
             opt_count
             shift
             ;;
-        -v|verbose|--verbose)
+        -v|--verbose)
             OPT_ZSEND="-Rv"
             TARGET="${2}"
             shift
